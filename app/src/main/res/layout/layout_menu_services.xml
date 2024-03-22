@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/icon_ikun"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_launcher_ikun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/RounderImage" />
+
+    <LinearLayout
+        android:id="@+id/content_kun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/icon_ikun"
+        app:layout_constraintStart_toStartOf="@+id/icon_ikun"
+        app:layout_constraintTop_toBottomOf="@+id/icon_ikun"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/change_kun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_ikun_button"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="5dp"
+            android:text="参照图片"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/start_kun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_ikun_button"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="5dp"
+            android:text="图片对照"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/start_pixel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_ikun_button"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="5dp"
+            android:text="像素之眼"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_ikun_button"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="5dp"
+            android:text="结束程序"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

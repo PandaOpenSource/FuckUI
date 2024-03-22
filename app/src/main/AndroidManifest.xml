@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_launch"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FuckUI"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MenuServices"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.fuckui.MenuServices" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MainKunService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.fuckui.MainKunService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".PixelService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.fuckui.PixelService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".KunImageSelectActivity"
+            android:launchMode="singleInstance" />
+    </application>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+</manifest>

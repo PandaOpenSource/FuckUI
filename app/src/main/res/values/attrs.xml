@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="arl_aspect_ratio" format="float" />
+    <attr name="arl_fixed_edge">
+        <enum name="width" value="0" />
+        <enum name="height" value="1" />
+    </attr>
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="arl_aspect_ratio" />
+        <attr name="arl_fixed_edge" />
+    </declare-styleable>
+
+</resources>
